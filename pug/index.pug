@@ -1,9 +1,41 @@
+mixin product(img, title, p)
+    .product
+        img(src=img data-aos="flip-left")
+        h2=title
+        p=p
+
 <!DOCTYPE html>
 html(lang="zh")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="./asset/css/style.css")
+        link(rel="stylesheet", href="./asset/scss/style.css")
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         title Ramen
     body
         .banner
+            ul
+                li #[a(href="#product") 我們商品]
+                li#logo(data-aos="fade-down") Ramen
+                li #[a(href="#about") 關於我們]
+        .content
+            .title
+                h1 我愛拉麵
+                p  拉麵香醇口味和濃厚湯底的搭配，只有完美可以形容。 
+            .productbox#product   
+                +product("./asset/images/product1.png", "叉燒拉麵", "香醇的拉麵搭配上大量的叉燒，推薦愛吃麵也愛吃肉的人來嘗鮮。")
+                +product("./asset/images/product2.png", "鬼燒拉麵", "麻辣的滋味在嘴裡散開，香氣衝入鼻中，讓人胃口大開，食指大動，非常推薦愛吃辣的人來吃。")
+                +product("./asset/images/product3.png", "豚骨拉麵", "用上的豬骨熬製，濃醇的味道在湯裡散開，喝完後會讓你有滿足感，最經典的美味。")
+            .aboutbox#about
+                .aboutimg
+                    img(src="./asset/images/about.png")
+                .abouttxt
+                    h2="關於我們"
+                    p="熱愛拉麵的我們決定要做出讓大家能夠胃口大開的拉麵，麵條的Q彈和湯的濃厚，都是本店的特色，歡迎大家來嚐鮮。"
+        |   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        |   <script>
+        |       AOS.init();
+        |   </script>            
+    footer
+        .icon
+            img(src="./asset/images/icon.png", alt="icon")                

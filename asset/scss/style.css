@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  font-family: 微軟正黑體 !important;
+  border: 0.1px solid rgba(255, 0, 0, 0) !important;
+}
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/asset/images/banner.png);
+}
+
+.banner ul {
+  width: 1000px;
+  height: 100px;
+  color: white;
+  margin: 85px auto 0 auto;
+  text-align: center;
+}
+
+.banner ul li {
+  display: inline-block;
+  font-size: 36px;
+}
+
+.banner ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner ul li a:hover {
+  color: blue;
+}
+
+.banner ul #logo {
+  vertical-align: top;
+  font-size: 72px;
+  font-family: 'Press Start 2P', cursive !important;
+  margin: 0 121px 0 121px;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+.content .title {
+  text-align: center;
+}
+
+.content .title h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 10px 0 38px 0;
+}
+
+.content .title p {
+  font-size: 18px;
+  margin-bottom: 74px;
+}
+
+.content .productbox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 21px;
+}
+
+.content .productbox .product img {
+  width: 100%;
+}
+
+.content .productbox .product h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 21px 0 30px 0;
+}
+
+.content .productbox .product p {
+  font-size: 18px;
+  margin-bottom: 76px;
+}
+
+.content .aboutbox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 90px;
+}
+
+.content .aboutbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.content .aboutbox h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.content .aboutbox p {
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer .icon {
+  margin-bottom: 243px;
+}
+/*# sourceMappingURL=style.css.map */

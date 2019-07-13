@@ -3,10 +3,49 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./asset/css/style.css"/>
+    <link rel="stylesheet" href="./asset/scss/style.css"/><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Ramen</title>
   </head>
   <body>
-    <div class="banner"></div>
+    <div class="banner">
+      <ul>
+        <li><a href="#product">我們商品</a></li>
+        <li id="logo" data-aos="fade-down">Ramen</li>
+        <li><a href="#about">關於我們</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h1>我愛拉麵</h1>
+        <p> 拉麵香醇口味和濃厚湯底的搭配，只有完美可以形容。 </p>
+      </div>
+      <div class="productbox" id="product">  
+        <div class="product"><img src="./asset/images/product1.png" data-aos="flip-left"/>
+          <h2>叉燒拉麵</h2>
+          <p>香醇的拉麵搭配上大量的叉燒，推薦愛吃麵也愛吃肉的人來嘗鮮。</p>
+        </div>
+        <div class="product"><img src="./asset/images/product2.png" data-aos="flip-left"/>
+          <h2>鬼燒拉麵</h2>
+          <p>麻辣的滋味在嘴裡散開，香氣衝入鼻中，讓人胃口大開，食指大動，非常推薦愛吃辣的人來吃。</p>
+        </div>
+        <div class="product"><img src="./asset/images/product3.png" data-aos="flip-left"/>
+          <h2>豚骨拉麵</h2>
+          <p>用上的豬骨熬製，濃醇的味道在湯裡散開，喝完後會讓你有滿足感，最經典的美味。</p>
+        </div>
+      </div>
+      <div class="aboutbox" id="about">
+        <div class="aboutimg"><img src="./asset/images/about.png"/></div>
+        <div class="abouttxt">
+          <h2>關於我們</h2>
+          <p>熱愛拉麵的我們決定要做出讓大家能夠胃口大開的拉麵，麵條的Q彈和湯的濃厚，都是本店的特色，歡迎大家來嚐鮮。</p>
+        </div>
+      </div>
+    </div>  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>            
   </body>
+  <footer>
+    <div class="icon"><img src="./asset/images/icon.png" alt="icon"/></div>
+  </footer>
 </html>

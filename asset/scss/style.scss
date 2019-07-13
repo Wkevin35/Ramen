@@ -1,0 +1,109 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+$fontP: 18px;
+*{
+    font-family: 微軟正黑體 !important;
+    border: 0.1px solid rgba(255, 0, 0, 0) !important;
+}
+.banner {
+    width:100vw;
+    height: 100vh;
+    background-image: url(/asset/images/banner.png);
+    ul {
+        width: 1000px;
+        height: 100px;
+        color: white;
+        margin: 85px auto 0 auto;
+        text-align: center;
+        li {
+            display: inline-block;
+            font-size: 36px;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: blue;
+            }
+        }
+
+        #logo {
+            vertical-align: top;
+            font-size: 72px;
+            font-family: 'Press Start 2P', cursive !important;
+            margin: 0 121px 0 121px;
+        }
+    }
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto 0 auto;
+    .title {
+        text-align: center;
+        h1 {
+            font-size: 36px;
+            font-weight: 900;
+            margin: 10px 0 38px 0;
+        }
+
+        p {
+            font-size: $fontP;
+            margin-bottom: 74px;
+        }
+    }
+
+    .productbox{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 21px;
+        .product {
+            img {
+                width: 100%;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 900;
+                margin: 21px 0 30px 0;
+
+            }
+
+            p {
+                font-size: $fontP;
+                margin-bottom: 76px;
+            }
+        }
+    }
+
+    .aboutbox {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 90px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: $fontP;
+        }
+    }
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    .icon {
+        margin-bottom: 243px;
+    }
+}
