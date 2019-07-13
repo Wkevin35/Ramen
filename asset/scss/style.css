@@ -9,7 +9,7 @@
 .banner {
   width: 100vw;
   height: 100vh;
-  background-image: url(/asset/images/banner.png);
+  background-image: url(../asset/images/banner.png);
 }
 
 .banner ul {
